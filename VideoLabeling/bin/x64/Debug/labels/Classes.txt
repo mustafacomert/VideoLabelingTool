@@ -1,0 +1,12 @@
+WetAndApplySoap
+RubPalmToPalm
+RubBackOfLeftHand
+RubBackOfRightHand
+RubWithInterlacedFingers
+RubWithInterlockedFingers
+RubLeftThumb
+RubRightThumb
+RubRightFingertips
+RubLeftFingertips
+RinseHands
+NoWashing

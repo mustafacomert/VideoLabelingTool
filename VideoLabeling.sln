@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.74
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoLabeling", "VideoLabeling\VideoLabeling.csproj", "{D7FEBA07-5B0E-4E82-BDAA-E489F1937989}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{7777A814-0FD6-4399-862B-070D548DB9C2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Cikti|Any CPU = Cikti|Any CPU
+		Cikti|x64 = Cikti|x64
+		Cikti|x86 = Cikti|x86
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+		Release2|Any CPU = Release2|Any CPU
+		Release2|x64 = Release2|x64
+		Release2|x86 = Release2|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7FEBA07-5B0E-4E82-BDAA-E489F1937989}.Cikti|Any CPU.ActiveCfg = Release|Any CPU
+		{D7FEBA07-5B0E-4E82-BDAA-E489F1937989}.Cikti|Any CPU.Build.0 = Release|Any CPU
+		{D7FEBA07-5B0E-4E82-BDAA-E489F1937989}.Cikti|x64.ActiveCfg = Release|x64
+		{D7FEBA07-5B0E-4E82-BDAA-E489F1937989}.Cikti|x64.Build.0 = Release|x64
+		{D7FEBA07-5B0E-4E82-BDAA-E489F1937989}.Cikti|x86.ActiveCfg = Release|x86
+		{D7FEBA07-5B0E-4E82-BDAA-E489F1937989}.Cikti|x86.Build.0 = Release|x86
+		{D7FEBA07-5B0E-4E82-BDAA-E489F1937989}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{D7FEBA07-5B0E-4E82-BDAA-E489F1937989}.Debug|Any CPU.Build.0 = Debug|x86
+		{D7FEBA07-5B0E-4E82-BDAA-E489F1937989}.Debug|x64.ActiveCfg = Debug|x64
+		{D7FEBA07-5B0E-4E82-BDAA-E489F1937989}.Debug|x64.Build.0 = Debug|x64
+		{D7FEBA07-5B0E-4E82-BDAA-E489F1937989}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D7FEBA07-5B0E-4E82-BDAA-E489F1937989}.Debug|x86.Build.0 = Debug|Any CPU
+		{D7FEBA07-5B0E-4E82-BDAA-E489F1937989}.Release|Any CPU.ActiveCfg = Debug|x64
+		{D7FEBA07-5B0E-4E82-BDAA-E489F1937989}.Release|Any CPU.Build.0 = Debug|x64
+		{D7FEBA07-5B0E-4E82-BDAA-E489F1937989}.Release|x64.ActiveCfg = Release|x64
+		{D7FEBA07-5B0E-4E82-BDAA-E489F1937989}.Release|x64.Build.0 = Release|x64
+		{D7FEBA07-5B0E-4E82-BDAA-E489F1937989}.Release|x86.ActiveCfg = Release|x86
+		{D7FEBA07-5B0E-4E82-BDAA-E489F1937989}.Release|x86.Build.0 = Release|x86
+		{D7FEBA07-5B0E-4E82-BDAA-E489F1937989}.Release2|Any CPU.ActiveCfg = Release|Any CPU
+		{D7FEBA07-5B0E-4E82-BDAA-E489F1937989}.Release2|Any CPU.Build.0 = Release|Any CPU
+		{D7FEBA07-5B0E-4E82-BDAA-E489F1937989}.Release2|x64.ActiveCfg = Release|x64
+		{D7FEBA07-5B0E-4E82-BDAA-E489F1937989}.Release2|x64.Build.0 = Release|x64
+		{D7FEBA07-5B0E-4E82-BDAA-E489F1937989}.Release2|x86.ActiveCfg = Release|x86
+		{D7FEBA07-5B0E-4E82-BDAA-E489F1937989}.Release2|x86.Build.0 = Release|x86
+		{7777A814-0FD6-4399-862B-070D548DB9C2}.Cikti|Any CPU.ActiveCfg = Debug
+		{7777A814-0FD6-4399-862B-070D548DB9C2}.Cikti|x64.ActiveCfg = Debug
+		{7777A814-0FD6-4399-862B-070D548DB9C2}.Cikti|x86.ActiveCfg = Debug
+		{7777A814-0FD6-4399-862B-070D548DB9C2}.Debug|Any CPU.ActiveCfg = Debug
+		{7777A814-0FD6-4399-862B-070D548DB9C2}.Debug|x64.ActiveCfg = Debug
+		{7777A814-0FD6-4399-862B-070D548DB9C2}.Debug|x86.ActiveCfg = Debug
+		{7777A814-0FD6-4399-862B-070D548DB9C2}.Release|Any CPU.ActiveCfg = Release
+		{7777A814-0FD6-4399-862B-070D548DB9C2}.Release|x64.ActiveCfg = Release
+		{7777A814-0FD6-4399-862B-070D548DB9C2}.Release|x86.ActiveCfg = Release
+		{7777A814-0FD6-4399-862B-070D548DB9C2}.Release2|Any CPU.ActiveCfg = Release
+		{7777A814-0FD6-4399-862B-070D548DB9C2}.Release2|x64.ActiveCfg = Release
+		{7777A814-0FD6-4399-862B-070D548DB9C2}.Release2|x86.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1138ACD8-9068-4C29-BAD2-F34EFEF90DFA}
+	EndGlobalSection
+EndGlobal
