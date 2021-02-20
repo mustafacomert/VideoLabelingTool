@@ -50,3 +50,10 @@ C:\Users\Musta\Desktop\VideoLabeling-master\VideoLabeling\obj\x86\Release\VideoL
 C:\Users\Musta\Desktop\VideoLabeling-master\VideoLabeling\obj\x86\Release\VideoLabeling.csproj.CoreCompileInputs.cache
 C:\Users\Musta\Desktop\VideoLabeling-master\VideoLabeling\obj\x86\Release\VideoLabeling.exe
 C:\Users\Musta\Desktop\VideoLabeling-master\VideoLabeling\obj\x86\Release\VideoLabeling.pdb
+C:\Users\Musta\Desktop\VideoLabelingTool\VideoLabeling\obj\x86\Release\VideoLabeling.csprojAssemblyReference.cache
+C:\Users\Musta\Desktop\VideoLabelingTool\VideoLabeling\obj\x86\Release\VideoLabeling.Form1.resources
+C:\Users\Musta\Desktop\VideoLabelingTool\VideoLabeling\obj\x86\Release\VideoLabeling.Properties.Resources.resources
+C:\Users\Musta\Desktop\VideoLabelingTool\VideoLabeling\obj\x86\Release\VideoLabeling.csproj.GenerateResource.cache
+C:\Users\Musta\Desktop\VideoLabelingTool\VideoLabeling\obj\x86\Release\VideoLabeling.csproj.CoreCompileInputs.cache
+C:\Users\Musta\Desktop\VideoLabelingTool\VideoLabeling\obj\x86\Release\VideoLabeling.exe
+C:\Users\Musta\Desktop\VideoLabelingTool\VideoLabeling\obj\x86\Release\VideoLabeling.pdb

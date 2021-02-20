@@ -1,20 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Emgu.CV;
-using Emgu.CV.ML;
 using Emgu.CV.Structure;
-using Emgu.CV.Util;
-
+using System.Diagnostics;
 namespace VideoLabeling
 {
     public partial class Form1 : Form
@@ -47,7 +40,6 @@ namespace VideoLabeling
         //dosya arama, seçme işlemleri için
         private OpenFileDialog ofd;
         private string lastLabelClass;
-
         //ekranin full screen başlamasi için 
         private void GoFullScreen()
         {
@@ -321,35 +313,42 @@ namespace VideoLabeling
             ExtractingFramesLabel.BackColor = System.Drawing.Color.Transparent;
             Application.DoEvents();
         }
+        private void LaunchCommandLineApp(String targetFolder)
+        {
+            Console.WriteLine("Hellowoasdkaskdaskd");
+            // Use ProcessStartInfo class
+            ProcessStartInfo startInfo = new ProcessStartInfo();
+            startInfo.CreateNoWindow = false;
+            startInfo.UseShellExecute = false;
+            startInfo.FileName = "ffmpeg.exe";
+            startInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            startInfo.Arguments = "-i " + ofd.FileName + " " + targetFolder + "\\%5d.jpg";
+            Console.WriteLine(startInfo.Arguments);
+            try
+            {
+                // Start the process with the info we specified.
+                // Call WaitForExit and then the using statement will close.
+                Console.WriteLine("strartt");
+                using (Process exeProcess = Process.Start(startInfo))
+                {
+                    
+                }
+            }
+            catch
+            {
+                Console.WriteLine("erırr");
+                // Log error.
+            }
+        }
         //frameleri disa aktarma
         private void extractFramesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Mat m = new Mat();
+            Console.WriteLine("wqeqweqw");
             FolderBrowserDialog fbd = new FolderBrowserDialog();
-        
             if (fbd.ShowDialog() == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.SelectedPath))
             {
                 setVisiblityExtraction(true);
-                for (int i = 0; i < totalFrameCount; ++i)
-                {
-                    if (stopExtract)
-                        break;
-                    capture.SetCaptureProperty(Emgu.CV.CvEnum.CapProp.PosFrames, i);
-                    capture.Read(m);
-                    //Mat objesi boş değil ise
-                    m.ToImage<Bgr, byte>().Save(fbd.SelectedPath + "\\" + i + ".jpeg");
-                    progressBar1.Maximum = totalFrameCount;
-                    progressBar1.Value += 1;
-                }
-                setVisiblityExtraction(false);
-                if (totalFrameCount == 0)
-                {
-                    MessageBox.Show("Please Import a Video Before Extracting Frames");
-                }
-                else
-                {
-                    MessageBox.Show("Extracting Frames is Done");
-                }
+                LaunchCommandLineApp(fbd.SelectedPath);
             }
         }
 
