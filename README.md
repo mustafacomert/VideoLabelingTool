@@ -1,8 +1,5 @@
 # VideoLabelingTool
 
-Usage Of Video Labeling Tools(Explanation in Turkish)
-
-https://youtu.be/yoNwasNmMSM
 
 User Guide:
 
