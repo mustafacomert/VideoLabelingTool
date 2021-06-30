@@ -1,5 +1,9 @@
 # VideoLabelingTool
- 
+
+Usage Of Video Labeling Tools(Explanation in Turkish)
+
+https://youtu.be/yoNwasNmMSM
+
 User Guide:
 
 1- To Use This Program, You need to have x64 Windows Operating System(If you need x86 version let me know, contact: mustafacomert00@gmail.com)
@@ -28,3 +32,4 @@ e.g.
 10 Row number of Class names inside the Classes.txt, should corresponde with number inside the label images in a sequential manner.
 
 ![11](https://user-images.githubusercontent.com/23137105/123962908-9d3b8480-d9ba-11eb-8dcc-bc1962bcd17c.png)
+
