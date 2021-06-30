@@ -67,14 +67,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VideoLabeling.exe" size="486896">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VideoLabeling.exe" size="486384">
       <assemblyIdentity name="VideoLabeling" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>zDw/N8DCntvY668PHd9FAP/BPoW+o2nCUhjbim8tCyY=</dsig:DigestValue>
+        <dsig:DigestValue>YhzghpcY5DeT9K6juQoi9x9ixCNVWhHac6h4NAStEs8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

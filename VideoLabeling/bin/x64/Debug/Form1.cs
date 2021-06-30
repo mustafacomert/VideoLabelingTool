@@ -307,22 +307,35 @@ namespace VideoLabeling
         }
         private void setVisiblityExtraction(bool visible)
         {
-            stopExtractButton.Visible = visible;
-            ExtractingFramesLabel.Visible = visible;
-            progressBar1.Visible = visible;
-            ExtractingFramesLabel.BackColor = System.Drawing.Color.Transparent;
+            //stopExtractButton.Visible = visible;
+            //ExtractingFramesLabel.Visible = visible;
+            //progressBar1.Visible = visible;
+            //ExtractingFramesLabel.BackColor = System.Drawing.Color.Transparent;
             Application.DoEvents();
         }
         private void LaunchCommandLineApp(String targetFolder)
         {
+            string dirName;
             Console.WriteLine("Hellowoasdkaskdaskd");
             // Use ProcessStartInfo class
             ProcessStartInfo startInfo = new ProcessStartInfo();
             startInfo.CreateNoWindow = false;
             startInfo.UseShellExecute = false;
             startInfo.FileName = "ffmpeg.exe";
-            startInfo.WindowStyle = ProcessWindowStyle.Hidden;
-            startInfo.Arguments = "-i " + ofd.FileName + " " + targetFolder + "\\%5d.jpg";
+            startInfo.WindowStyle = ProcessWindowStyle.Normal;
+            for (int i = 1; ; ++i)
+            {
+                Debug.WriteLine(ofd.SafeFileName);
+                dirName = targetFolder + "\\" + ofd.SafeFileName + "_extracted_frames_"  + i.ToString();
+                if (!Directory.Exists(dirName))
+                {
+                    Debug.WriteLine(dirName);
+                    Directory.CreateDirectory(dirName);
+                    break;
+                }
+            }
+           
+            startInfo.Arguments = "-i " + "\"" + ofd.FileName + "\" \"" + dirName + "\\%5d.jpg\"";
             Console.WriteLine(startInfo.Arguments);
             try
             {
@@ -345,6 +358,11 @@ namespace VideoLabeling
         {
             Console.WriteLine("wqeqweqw");
             FolderBrowserDialog fbd = new FolderBrowserDialog();
+            if(ofd == null || string.IsNullOrWhiteSpace(ofd.FileName))
+            {
+                MessageBox.Show("Import a Video Before Extracting Frames!");
+                return;
+            }
             if (fbd.ShowDialog() == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.SelectedPath))
             {
                 setVisiblityExtraction(true);
@@ -434,9 +452,5 @@ namespace VideoLabeling
 
         }
 
-        private void stopExtractButton_Click(object sender, EventArgs e)
-        {
-            stopExtract = true;
-        }
     }
 }

@@ -63,11 +63,8 @@
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.button1 = new System.Windows.Forms.Button();
             this.doneLabeling = new System.Windows.Forms.Button();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
-            this.stopExtractButton = new System.Windows.Forms.Button();
             this.eventLog1 = new System.Diagnostics.EventLog();
-            this.ExtractingFramesLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.videoDisplayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.frameFreqDown)).BeginInit();
             this.videoPlayerComponents.SuspendLayout();
@@ -85,7 +82,7 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Location = new System.Drawing.Point(0, 28);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1779, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1800, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -427,7 +424,7 @@
             this.fileToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(1779, 28);
+            this.menuStrip2.Size = new System.Drawing.Size(1800, 28);
             this.menuStrip2.TabIndex = 1;
             this.menuStrip2.Text = "menuStrip2";
             // 
@@ -453,43 +450,9 @@
             this.doneLabeling.UseVisualStyleBackColor = false;
             this.doneLabeling.Click += new System.EventHandler(this.doneLabeling_Click);
             // 
-            // progressBar1
-            // 
-            this.progressBar1.BackColor = System.Drawing.SystemColors.Control;
-            this.progressBar1.Cursor = System.Windows.Forms.Cursors.No;
-            this.progressBar1.ForeColor = System.Drawing.Color.LimeGreen;
-            this.progressBar1.Location = new System.Drawing.Point(37, 854);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(494, 23);
-            this.progressBar1.Step = 1;
-            this.progressBar1.TabIndex = 24;
-            // 
-            // stopExtractButton
-            // 
-            this.stopExtractButton.BackColor = System.Drawing.SystemColors.Control;
-            this.stopExtractButton.Location = new System.Drawing.Point(537, 850);
-            this.stopExtractButton.Name = "stopExtractButton";
-            this.stopExtractButton.Size = new System.Drawing.Size(202, 33);
-            this.stopExtractButton.TabIndex = 26;
-            this.stopExtractButton.Text = "Stop Extracting";
-            this.stopExtractButton.UseVisualStyleBackColor = true;
-            this.stopExtractButton.Click += new System.EventHandler(this.stopExtractButton_Click);
-            // 
             // eventLog1
             // 
             this.eventLog1.SynchronizingObject = this;
-            // 
-            // ExtractingFramesLabel
-            // 
-            this.ExtractingFramesLabel.BackColor = System.Drawing.Color.Transparent;
-            this.ExtractingFramesLabel.ForeColor = System.Drawing.Color.Red;
-            this.ExtractingFramesLabel.Location = new System.Drawing.Point(37, 834);
-            this.ExtractingFramesLabel.Name = "ExtractingFramesLabel";
-            this.ExtractingFramesLabel.Size = new System.Drawing.Size(133, 17);
-            this.ExtractingFramesLabel.TabIndex = 25;
-            this.ExtractingFramesLabel.Text = "Extracting Frames...";
-            this.ExtractingFramesLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.ExtractingFramesLabel.UseCompatibleTextRendering = true;
             // 
             // Form1
             // 
@@ -497,10 +460,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1800, 897);
-            this.Controls.Add(this.ExtractingFramesLabel);
-            this.Controls.Add(this.stopExtractButton);
-            this.Controls.Add(this.progressBar1);
+            this.ClientSize = new System.Drawing.Size(1821, 897);
             this.Controls.Add(this.doneLabeling);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.currentFrameLabel);
@@ -571,11 +531,8 @@
         private System.Windows.Forms.Button assignLabel;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button doneLabeling;
-        private System.Windows.Forms.ProgressBar progressBar1;
         private System.Drawing.Printing.PrintDocument printDocument1;
-        private System.Windows.Forms.Button stopExtractButton;
         private System.Diagnostics.EventLog eventLog1;
-        private System.Windows.Forms.Label ExtractingFramesLabel;
     }
 }
 
