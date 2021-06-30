@@ -1,5 +1,10 @@
 # VideoLabelingTool
 
+A tool to label frames of a video with ease.
+
+Features:
+* Creates a file that contains frame labels for all frames line by line fashion.
+* Extracts all frames of that video in a folder that is under the selected folder.  
 
 User Guide:
 
