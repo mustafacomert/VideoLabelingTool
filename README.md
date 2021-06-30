@@ -18,7 +18,7 @@ User Guide:
 
 ![labels](https://user-images.githubusercontent.com/23137105/123961440-07532a00-d9b9-11eb-8de9-537f91f87cb6.png)
 
-8 Inside "labels" folder you must have a .txt file named Classes.txt which contains class names for the Labels you want to have in program. The last class name will be selected as default label for frames, if you don't change a frame label, it will remain as NoWashing in our example.
+8 Inside "labels" folder you must have a .txt file named Classes.txt which contains class names for the Labels you want to have in program. The last class name will be selected as default label for frames, if you don't change a frame's label, it will remain as NoWashing in our example. 
 
 e.g.
 ![image](https://user-images.githubusercontent.com/23137105/123960559-1a192f00-d9b8-11eb-8173-4afca03c4fa3.png)
